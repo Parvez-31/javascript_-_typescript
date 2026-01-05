@@ -24,3 +24,35 @@ for (let key in user) {
 for (let number = 0; number <= 12; number = number + 3) {
   console.log(number);
 }
+
+// while loop
+
+let i = 0;
+while (i <= 5) {
+  // console.log(i);
+  i++;
+}
+
+let result = 1;
+
+for (let counter = 0; counter < 10; counter++) {
+  console.log((result = result * 2));
+}
+
+// console.log(result);
+
+// break
+for (let current = 20; ; current = current + 1) {
+  if (current % 7 === 0) {
+    console.log(current);
+    break;
+  }
+}
+
+// continue
+for (let i = 0; i <= 5; i++) {
+  if (i === 3) {
+    continue;
+  }
+  console.log(i);
+}
