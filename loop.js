@@ -56,3 +56,7 @@ for (let i = 0; i <= 5; i++) {
   }
   console.log(i);
 }
+
+for (let count = 0; count <= 12; count += 2) {
+  console.log(count);
+}
