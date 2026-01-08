@@ -1,0 +1,12 @@
+ QUESTION: 
+ TOPIC: -> String and string method
+
+1: Write the difference between slice() and substring() method.
+2: Does substring() method except negative position?
+3: What is the purpose of using trim() method?
+4: Write the difference between trimStart() , trimEnd() and trim() method.
+5: Write the difference between replace() and replaceAll() method.
+6: How can you join two and more strings together?
+7: What is the purpose of using template string in js?
+8: What is the string interpulation? Given a example.
+ 
