@@ -1,4 +1,4 @@
-// for loop
+// TOPIC: -> for loop
 for (let i = 0; i <= 10; i++) {
   // console.log(i);
 }
@@ -59,4 +59,39 @@ for (let i = 0; i <= 5; i++) {
 
 for (let count = 0; count <= 12; count += 2) {
   console.log(count);
+}
+
+// TOPIC: ->  While loop
+let number = 0;
+while (number <= 12) {
+  console.log(number);
+  number += 2;
+}
+
+// -----------------
+
+let counter = 0;
+let res = 1;
+while (counter < 10) {
+  res = res * 2;
+  console.log(res);
+  counter++;
+}
+
+// TOPIC: -> Do While loop
+
+let yourName;
+do {
+  // yourName = prompt("Who are you?");
+} while (yourName);
+{
+  console.log(`Hello ${yourName}`);
+}
+
+// ----------------
+if (false !== true) {
+  console.log("That's makes sense.");
+  if (1 < 2) {
+    console.log("No surprise there.");
+  }
 }
