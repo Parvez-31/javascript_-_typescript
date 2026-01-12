@@ -66,5 +66,5 @@ let c2 = "Batman";
 let c3 = c1.concat(" ", c2);
 console.log(c3);
 
-// Topic: -> Template string
+// TOPIC: -> Template string
 console.log(`Hello world!! I am your beloved ${c1} and ${c2}`);
