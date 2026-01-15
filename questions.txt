@@ -9,4 +9,7 @@
 6: How can you join two and more strings together?
 7: What is the purpose of using template string in js?
 8: What is the string interpulation? Given a example.
+9: Write the difference between search() and indexof() method?
+10: What is the difference between startWith , endsWith and includes method in js?
+11: How can you convert a string into an array?
  
