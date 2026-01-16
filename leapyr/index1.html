@@ -12,12 +12,15 @@
       <label for="year">Enter Year: </label>
       <input type="number" id="year" name="year" />
       <br /><br />
-      <label for="date">Enter Date: </label>
-      <input type="number" id="date" name="date" max="31" min="1" />
-      <br /><br />
+
       <label for="month">Enter Month: </label>
       <input type="number" id="month" name="month" max="12" min="1" />
       <br /><br />
+
+      <label for="date">Enter Date: </label>
+      <input type="number" id="date" name="date" max="31" min="1" />
+      <br /><br />
+
       <button type="submit">Check Leap Year</button>
       <button type="reset">Reset</button>
     </form>
@@ -25,29 +28,40 @@
     <p id="result"></p>
     <script>
       const leapYearFormEl = document.getElementById("leapYearForm");
-      const yearEl = parseInt(document.getElementById("year").value);
-      const monthEl = parseInt(document.getElementById("month").value);
-      const dateEl = parseInt(document.getElementById("date").value);
+      const resetEl = document.getElementById("reset");
       const resultEl = document.getElementById("result");
 
-      leapYearFormEl.addEventListener("click", function (e) {
+      leapYearFormEl.addEventListener("submit", (e) => {
         e.preventDefault();
-        function isLeapYear(yearEl) {
-          return (yearEl % 100 !== 0 && yearEl % 4 === 0) || yearEl % 400 === 0;
+        console.log("first");
+        //
+        const yearEl = Number(document.getElementById("year").value);
+        const monthEl = Number(document.getElementById("month").value);
+        const dateEl = Number(document.getElementById("date").value);
+
+        // Validation
+        if (!yearEl || !monthEl || !dateEl) {
+          resultEl.textContent = "Please fill all fields";
+          return;
         }
 
-        // check if the year is leap year
-        let leapyr = isLeapYear(yearEl);
-        let result = leapyr
-          ? `${yearEl} is a leap year`
-          : `${yearEl} is not a leap year`;
-
-        // check if the date is valid (Fed 29th  check)
-        if (monthEl === 2 && dateEl === 29 && !yearEl) {
-          result = `${yearEl} is not leap year , so feb 29th is not valid`;
+        // Check year
+        function isLeapYear(year) {
+          return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
         }
 
-        resultEl.textContent = result;
+        const leapYear = isLeapYear(yearEl);
+        // Check month
+        if (monthEl == 2 && dateEl > 29) {
+          if (leapYear) {
+            resultEl.textContent = `${yearEl} is a leap year but feb ${dateEl}th is not valid`;
+          }
+          return;
+        }
+
+        resultEl.textContent = leapYear
+          ? `${yearEl} is a leap year.`
+          : `${yearEl} is not  a leap year.`;
       });
     </script>
   </body>
