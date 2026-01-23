@@ -157,3 +157,30 @@ let ftr = ["apple", "bannana", "mango", "litchi"];
 for (let [key, value] of ftr.entries()) {
   console.log(`${key} : ${value}`);
 }
+
+// Method: -> from()
+// The Array.from() method creates a new array from an array-like or iterable object, such as a string, Set, Map or arguments.
+
+let text = "hello";
+let letters = Array.from(text);
+console.log(letters);
+
+// Method: -> some()
+// The some method checks if at least one element in an array satisfies a given collection and it returns true and false.
+
+let numero = [1, 3, , 5, 6];
+let hasEvenNumbers = numero.some((num) => {
+  return num % 2 === 0;
+});
+
+console.log(hasEvenNumbers);
+
+// Method: -> every()
+// The every method checks whether all elements in an array satisfy a given conditions.
+
+let n = [11, 13, 17, 25, 30];
+let allOdd = n.every((num) => {
+  return num % 2 !== 0;
+});
+
+console.log(allOdd);
