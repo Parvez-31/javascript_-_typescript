@@ -55,3 +55,46 @@ const hummus = function (factor) {
 };
 
 hummus(50);
+
+// Functions as values
+/*
+let launchMissiles = function () {
+  missileSystem.launch("now");
+};
+
+if (safeMode) {
+  launchMissiles = function () {
+    console.log("Missiles launched!");
+  };
+}
+*/
+
+let sum = function (a, b) {
+  return a + b;
+};
+
+let anotherSum = sum;
+console.log(anotherSum(2, 5));
+
+function doSomethings(fn) {
+  fn();
+}
+
+doSomethings(function () {
+  console.log("Hello!");
+});
+
+// Declaration notion
+console.log("The future says:", future());
+
+function future() {
+  return "You will never have flying cars";
+}
+
+// arrow function
+const roundOne = (n, step) => {
+  let remainder = n % step; // 0
+  return n - remainder + (remainder < step / 2 ? 0 : step);
+};
+
+console.log(roundOne(20, 10));
