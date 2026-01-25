@@ -98,3 +98,10 @@ const roundOne = (n, step) => {
 };
 
 console.log(roundOne(20, 10));
+
+// The call stack
+function greet() {
+  console.log("Hello" + who);
+}
+greet("Parvez");
+console.log("Bye");
