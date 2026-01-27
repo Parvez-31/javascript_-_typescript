@@ -107,14 +107,14 @@ greet("Parvez");
 console.log("Bye");
 
 //------------------------------------------
-function chicken() {
-  return egg();
-}
+// function chicken() {
+//   return egg();
+// }
 
-function egg() {
-  return chicken();
-}
-console.log(chicken() + " come first.");
+// function egg() {
+//   return chicken();
+// }
+// console.log(chicken() + " come first.");
 
 // Optional Arguments
 
@@ -140,3 +140,98 @@ function roundTwo(n, step = 1) {
 
 console.log(roundTwo(4.5));
 console.log(roundTwo(4.5, 2));
+
+//before ecmascript
+// named function
+
+function addition(num1, num2) {
+  let total = num1 + num2;
+  return total;
+}
+
+// let result = addition(24,38)
+// console.log(result)
+console.log(addition(24, 38));
+
+// after ecmascript
+// arrow function is donated by => notation
+
+let show = (a1, a2) => {
+  if (a1 >= 15 && a1 > a2) {
+    return a1 % a2;
+  } else {
+    return a1 * a2;
+  }
+};
+
+let result = show(25, 6);
+console.log(result);
+let res2 = show(4, 8);
+console.log(res2);
+
+// anonymous function
+let data = function () {
+  console.log("hello world");
+};
+data();
+
+// callback function
+let displayFun = (value) => {
+  console.log("The output is : ", value);
+};
+
+let check = (m1, m2) => {
+  if (m1 === m2) {
+    let data = "No data to be returned";
+    return data;
+  } else if (m1 > m2) {
+    let data = "The first number is greater";
+    return data;
+  } else {
+    let data = "The first number is not greater";
+    return data;
+  }
+};
+displayFun(check(45, 48));
+displayFun(check(100, 22));
+
+// first class function
+let formalGreetings = () => {
+  console.log("Hello i am a formal message");
+};
+
+let casualGreatings = () => {
+  console.log("hey! what's up");
+};
+
+let greatings = (type, formalGreetings, casualGreatings) => {
+  if (type === "formal") {
+    formalGreetings();
+  } else if (type === "casual") {
+    casualGreatings();
+  }
+};
+greatings("formal", formalGreetings, casualGreatings);
+greatings("casual", formalGreetings, casualGreatings);
+
+// Higher order function
+let product = (num) => {
+  return function () {
+    return num * 2;
+  };
+};
+
+let resultProduct = product(6);
+console.log(resultProduct());
+
+// closure
+const outerFunction = (count = 0) => {
+  function innerFunction() {
+    count++;
+    console.log(count);
+  }
+  return innerFunction();
+};
+
+let counter = outerFunction();
+counter();

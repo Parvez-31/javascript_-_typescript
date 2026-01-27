@@ -12,4 +12,14 @@
 9: Write the difference between search() and indexof() method?
 10: What is the difference between startWith , endsWith and includes method in js?
 11: How can you convert a string into an array?
- 
+
+QUESTION:
+TOPIC: -> function.
+
+1: What is function? 
+2: Define parameters and arguments
+3: Define named fn, arrow fn, anon fn, callback fn, higher order fn, first class fn, closure.
+4: Write the difference between named fn, arrow fn, anon fn.
+5: Write the difference between higher fn and callback fn?
+6: Write the difference between callbackfn, higherorder fn, firstclass fn?
+7: What is closure in js?
