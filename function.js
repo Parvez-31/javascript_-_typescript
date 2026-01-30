@@ -177,7 +177,8 @@ data();
 
 // callback function
 let displayFun = (value) => {
-  console.log("The output is : ", value);
+  let result = value(45, 23);
+  console.log("The output is : ", result);
 };
 
 let check = (m1, m2) => {
@@ -189,8 +190,7 @@ let check = (m1, m2) => {
     return "The first number is not greater";
   }
 };
-displayFun(check(45, 48));
-displayFun(check(100, 22));
+displayFun(check);
 
 // first class function
 let formalGreetings = () => {
