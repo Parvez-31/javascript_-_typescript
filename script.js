@@ -682,11 +682,22 @@
 //
 // }
 
-const person = {
-  name: "alice",
-  age: 25,
-  country: "India",
+// const person = {
+//   name: "alice",
+//   age: 25,
+//   country: "India",
+// };
+
+// const entries = Object.entries(person);
+// console.log(entries);
+
+const profile = {
+  name: "Rahim",
+  age: 29,
+  city: "dakha",
 };
 
-const entries = Object.entries(person);
-console.log(entries);
+for (const key in profile) {
+  const values = profile[key];
+  console.log(key, values);
+}
