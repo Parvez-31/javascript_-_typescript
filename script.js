@@ -553,13 +553,140 @@
 // }
 // console.log(a);
 // abc();
-
-let arr = [2, 3, 4, 5, 6];
-arr.splice(1, 1, true);
-
-console.log(arr);
+//
+// let arr = [2, 3, 4, 5, 6];
+// arr.splice(1, 1, true);
+//
+// console.log(arr);
 
 // arr.push(23);
 // arr.pop();
 // arr.unshift(20, 88);
 // arr.shift();
+
+// function product(...inputs) {
+//   console.log(inputs);
+//
+//   let i = 2; // 10
+//   for (let x of inputs) {
+//     i = i * x;
+//     console.log(i);
+//   }
+//   // console.log(i);
+// }
+//
+// product(5, 6);
+//
+// const player = {
+//   name: "parvez",
+//   age: 27,
+//   sports: "football",
+//   team: "Fcb",
+// };
+//
+// console.log(player.team);
+//
+// const laptop = {
+//   brand: "HP",
+//   prise: 45000,
+//   hardDisc: "1TB",
+//   ram: "8gb",
+// };
+//
+// console.log(laptop.brand);
+//
+// const favPlace = {
+//   name: "kolkata",
+//   distance: "400km",
+//   popularity: "high",
+// };
+//
+// console.log(favPlace.popularity);
+//
+// const movie = {
+//   title: "Inception",
+//   director: "Nolan",
+//   rating: 9,
+// };
+//
+// console.log(movie["rating"]);
+//
+// const college = {
+//   name: "Basirhat college",
+//   established: 1996,
+//   groups: ["arts", "science", "commerce"],
+// };
+//
+// console.log(college.groups[1]);
+//
+// const family = {
+//   father: {
+//     name: "Habibur Rahaman",
+//     age: 60,
+//     profession: "Business man",
+//   },
+//   mother: {
+//     name: "Sabina Yasmin",
+//     age: 45,
+//     profession: "House wife",
+//   },
+// };
+//
+// const faterAge = family.father.age;
+// const motherAge = family.mother.age;
+//
+// const ageSum = function (age1, age2) {
+//   return age1 + age2;
+// };
+//
+// console.log(ageSum(faterAge, motherAge));
+
+// const computer = {
+//   brand: "Lenovo",
+//   price: 35000,
+//   processor: "intel",
+//   ssd: "512gb",
+// };
+//
+// const keys = Object.keys(computer);
+// const values = Object.values(computer);
+// console.log(keys);
+// console.log(values);
+
+// const profile = {
+//   name: "Rahim",
+//   age: 28,
+//   city: "dakha",
+// };
+//
+// const profileKeys = Object.keys(profile);
+// const hasName = profileKeys.includes("name");
+// console.log(hasName);
+//
+// if ("name" in profile) {
+//   console.log("name exists");
+// } else {
+//   console.log("No name, No spam");
+// }
+//
+// if (profile.hasOwnProperty("email")) {
+//   console.log("email nia boroloki dekai");
+// } else {
+//   console.log("email chara jibon");
+// }
+//
+// if (profile.city === "dakha") {
+//   console.log("jam ar sohor dakha");
+// } else {
+//   console.log("aram sob gram a");
+//
+// }
+
+const person = {
+  name: "alice",
+  age: 25,
+  country: "India",
+};
+
+const entries = Object.entries(person);
+console.log(entries);
