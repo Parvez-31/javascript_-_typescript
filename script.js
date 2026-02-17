@@ -740,7 +740,7 @@ const phone = {
 //   console.log(phoneDetails);
 // }
 
-const namePlace = [
+/* const namePlace = [
   {
     name: "gourav",
     place: "kolkata",
@@ -769,4 +769,13 @@ for (let a in namePlace) {
     x.push(namePlace[a]);
   }
 }
-console.log(x);
+console.log(x); */
+
+// Filter array method
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const newArr = arr.filter((item) => {
+  return item > 4;
+});
+console.log(newArr);
