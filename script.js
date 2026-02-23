@@ -1290,9 +1290,126 @@
 //   console.log(i);
 // }
 
-for (let i = 0; i <= 20; i++) {
-  if (i % 4 === 0) {
-    continue;
-  }
-  console.log(i);
-}
+// for (let i = 0; i <= 20; i++) {
+//   if (i % 4 === 0) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+// for (let i = 1; i <= 30; i++) {
+//   console.log(i);
+
+//   if (i === 15) {
+//     break;
+//   }
+// }
+
+// for (let i = 1; i <= 40; i++) {
+//   if (i % 7 === 0) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+// for (let i = 1; i <= 15; i++) {
+//   if (i === 9) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+// for (let i = 1; i <= 25; i++) {
+//   if (i % 3 === 0) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+// for (let i = 91; i <= 120; i++) {
+//   if (i % 10 === 0) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
+// let s = ["parvez", "usa", "xyz", "pxy"];
+
+// console.log(result);
+
+// const fn = (s) => {
+//   return s.filter((word) => {
+//     return word.includes("p");
+//   });
+// };
+// console.log(fn(s));
+// let arr = [];
+// for (let i = 0; i < s.length; i++) {
+//   if (s[i].includes("p")) {
+//     arr.push(s[i]);
+//   }
+// }
+// console.log(arr);
+
+// let st = "i am a good boy";
+
+// let str = [];
+// let word = "";
+// for (let i = 0; i < st.length; i++) {
+//   // console.log(st[i]);
+//   if (st[i] !== " ") {
+//     word = word + st[i];
+//   } else {
+//     str.push(word);
+//     word = "";
+//   }
+// }
+
+// console.log(str);
+
+// const data = [
+//   {
+//     id: 1,
+//     name: "Alice",
+//     age: 25,
+//     hobbies: ["reading", "cycling", "painting"],
+//     address: {
+//       street: "123 Main St",
+//       city: "New York",
+//       country: "USA",
+//       geo: { lat: 40.7128, lng: -74.006 },
+//     },
+//     friends: [
+//       { id: 11, name: "Bob", age: 26 },
+//       { id: 12, name: "Charlie", age: 24 },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     name: "David",
+//     age: 30,
+//     hobbies: ["gaming", "hiking"],
+//     address: {
+//       street: "456 Elm St",
+//       city: "Los Angeles",
+//       country: "USA",
+//       geo: { lat: 34.0522, lng: -118.2437 },
+//     },
+//     friends: [
+//       { id: 21, name: "Eve", age: 29 },
+//       { id: 22, name: "Frank", age: 31 },
+//     ],
+//   },
+// ];
+
+// for (let value of data) {
+//   // console.log(value);
+//   for (let v of Object.values(value)) {
+//     console.log(v);
+//   }
+// }
+
+// for (let i = 0; i < data.length; i++) {
+//   console.log(data[i]);
+
+// }
