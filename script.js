@@ -1473,3 +1473,75 @@
 //   return goj * 0.91;
 // };
 // console.log(gojToMeter(4));
+
+// const isLeapYear = (year) => {
+//   if (year % 400 === 0) {
+//     return true;
+//   } else if (year % 100 === 0) {
+//     return false;
+//   } else if (year % 4 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+// console.log(isLeapYear(2100));
+// console.log(isLeapYear(2024));
+// console.log(isLeapYear(2099));
+// console.log(isLeapYear(2091));
+
+// const incomeTax = (incomeAmount) => {
+//   if (incomeAmount <= 50000) {
+//     return 10;
+//   } else if (incomeAmount > 50001 && incomeAmount < 1000000) {
+//     return 20;
+//   } else if (incomeAmount > 100001 && incomeAmount < 200000) {
+//     return 30;
+//   } else if (incomeAmount > 200000) {
+//     return 40;
+//   }
+// };
+
+// console.log(incomeTax(70000));
+
+// const packageDelevary = (kg) => {
+//   if (kg < 10) {
+//     return 100;
+//   } else if (kg < 20) {
+//     return 300;
+//   } else if (kg < 50) {
+//     return 1000;
+//   } else {
+//     return 2000;
+//   }
+// };
+// console.log(packageDelevary(90));
+
+// const marksInput = (mark) => {
+//   if (mark >= 80) {
+//     return "A";
+//   } else if (mark > 70 && mark < 79) {
+//     return "B";
+//   } else if (mark > 60 && mark < 69) {
+//     return "C";
+//   } else if (mark >= 50 && mark < 59) {
+//     return "D";
+//   } else if (mark < 50) {
+//     return "F";
+//   }
+// };
+// console.log(marksInput(80));
+// const leapYear = (year) => {
+//   let count = 0;
+//   for (let i = 0; i < year.length; i++) {
+//     // console.log(year[i]);
+//     if (year[i] % 400 === 0 || (year[i] % 4 === 0 && year[i] % 100 !== 0)) {
+//       console.log(year[i]);
+//       count = count + 1;
+//     }
+//   }
+//   return count;
+// };
+// console.log(leapYear([1900, 2300, 2023, 2024, 2400, 5600, 2345]));
+// console.log(count);
