@@ -1413,3 +1413,63 @@
 //   console.log(data[i]);
 
 // }
+
+// TOPIC: => Javascript problem solving part -1
+
+// const inchToFeet = (inch) => {
+//   const feet = inch / 12;
+//   return feet;
+// };
+// console.log(inchToFeet(54));
+
+// const inchToFeet = (inch) => {
+//   const feetFraction = inch / 12;
+//   const feetNumber = parseInt(feetFraction);
+
+//   const inchRemaining = inch % 12;
+//   const result = `${feetNumber} ft ${inchRemaining} inch `;
+//   return result;
+// };
+
+// console.log(inchToFeet(78));
+
+// function mileToKilometer(mile) {
+//   return mile * 1.60934;
+// }
+// console.log(mileToKilometer(5));
+
+// const mileToGoj = (mile) => {
+//   return mile * 1760;
+// };
+// console.log(mileToGoj(13));
+
+// const kilowatToKilokalori = (hours) => {
+//   return hours * 860;
+// };
+// console.log(kilowatToKilokalori(2));
+
+// const hoursToSeconds = (hours) => {
+//   const oneHoursToSeconds = 60 * 60;
+//   return hours * oneHoursToSeconds;
+// };
+// console.log(hoursToSeconds(2));
+
+// const centemeterToMeter = (centemeter) => {
+//   return centemeter / 100;
+// };
+// console.log(centemeterToMeter(500));
+
+// const inchToCentemeter = (inch) => {
+//   return inch * 2.54;
+// };
+// console.log(inchToCentemeter(6));
+
+// const poundToKilogram = (pound) => {
+//   return pound * 0.453;
+// };
+// console.log(poundToKilogram(6));
+
+// const gojToMeter = (goj) => {
+//   return goj * 0.91;
+// };
+// console.log(gojToMeter(4));
