@@ -1545,3 +1545,99 @@
 // };
 // console.log(leapYear([1900, 2300, 2023, 2024, 2400, 5600, 2345]));
 // console.log(count);
+
+// const rest = (...item) => {
+//   let b = [];
+//   //   console.log(item);
+//   for (let i = 0; i < item.length; i++) {
+//     b.push(item[i] + 2);
+//   }
+//   return b;
+// };
+
+// console.log(rest(1, 2, 3, 4, 5));
+
+// map
+// const doubleAll = (...item) => {
+//   return item.map((item) => item * 2);
+// };
+// console.log(doubleAll(1, 2, 3, 4, 5));
+
+// // number to string
+// const numberToString = (...item) => {
+//   return item.map((item) => String(item));
+// };
+// console.log(numberToString(1, 2, 3, 4, 5, 6));
+
+// // uppercase
+// const uppercase = (...item) => {
+//   return item.map((item) => "Mr. " + item.toUpperCase());
+// };
+// console.log(uppercase("parvez", "nill", "ram"));
+
+// // filter
+// const evenNum = (...item) => {
+//   return item.filter((item) => item % 2 === 0);
+// };
+// console.log(evenNum(1, 2, 3, 4, 5, 6));
+
+// // long Words
+// const longWords = (...item) => {
+//   return item.filter((word) => word.length > 4);
+// };
+
+// console.log(longWords("parvez", "nill", "Messi", "pedri", "lamin"));
+// // include
+// const include = (...item) => {
+//   return item.filter((item) => item.includes("e"));
+// };
+// console.log(include("apple", "leva", "gavi", "barnal", "casado"));
+
+// // adults
+// const adults = (...item) => {
+//   return item.filter((item) => item.age >= 18);
+// };
+// console.log(
+//   adults(
+//     { name: "messi", age: 36 },
+//     { name: "pedri", age: 17 },
+//     { name: "lamin", age: 12 },
+//   ),
+// );
+// // reduce
+// const sumAll = (...item) => {
+//   return item.reduce((total, num) => total + num, 0);
+// };
+// console.log(sumAll(1, 2, 3, 4, 5));
+
+// //findMax
+// const findMaxNumber = (...item) => {
+//   return item.reduce((max, num) => {
+//     return max > num ? max : num;
+//   }, item[0]);
+// };
+// console.log(findMaxNumber(30, 90, 23, 67, 12));
+
+// // make object
+// const makeObj = (...item) => {
+//   return item.reduce((obj, name, index) => {
+//     obj[index] = name;
+//     return obj;
+//   }, {});
+// };
+// console.log(makeObj("parvez", "nill", "messi"));
+
+// // evenby reduce
+// const sumEven = (...item) => {
+//   return item.reduce((total, num) => {
+//     if (num % 2 === 0) {
+//       return total + num;
+//     }
+//   });
+// };
+// console.log(sumEven(1, 2, 3, 4, 5, 6, 7, 8, 9));
+// // find
+// const findGreaterThanTen = (...item) => {
+//   return item.find((item) => item < 10);
+// };
+// console.log(findGreaterThanTen(53, 40, 5, 90, 34, 45, 1, 8));
