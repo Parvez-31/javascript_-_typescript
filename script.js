@@ -1641,3 +1641,109 @@
 //   return item.find((item) => item < 10);
 // };
 // console.log(findGreaterThanTen(53, 40, 5, 90, 34, 45, 1, 8));
+
+// const a = ["nill", "parvez"];
+// const b = ["fahi", "mamu"];
+
+// // const c = a.concat(b);
+// // const c = [a + "" + "," + "" + b];
+// const c = [...a, ...b];
+// console.log(c);
+
+// const person = [
+//   {
+//     name: "parvez",
+//     address: "basirhat",
+//     pin: 30473047320734,
+//     id: 1,
+//   },
+//   {
+//     name: "mota",
+//     address: "barasat",
+//     pin: 304730897734,
+//     id: 2,
+//   },
+//   {
+//     name: "fahi",
+//     address: "tentulia",
+//     pin: 3047304730844,
+//     id: 3,
+//   },
+//   {
+//     name: "samim mamu",
+//     address: "katiahat",
+//     pin: 3047300483,
+//     id: 4,
+//   },
+//   {
+//     name: "afroja",
+//     address: "taki",
+//     pin: 3047434340,
+//     id: 5,
+//   },
+// ];
+
+// const per = person.map((item, index) => {
+//   return item.name === "parvez" ? { ...item, name: "dodo" } : item;
+// });
+
+// console.log(per);
+
+// const users = [
+//   { name: "parvez", age: 22 },
+//   { name: "fahi", age: 18 },
+//   { name: "mamu", age: 30 },
+// ];
+
+// const ageChange = users.map((item) => {
+//   return item.name === "fahi" ? { ...item, age: 21 } : item;
+// });
+
+// console.log(ageChange);
+
+// const students = [
+//   { name: "rahim", marks: 40 },
+//   { name: "karim", marks: 80 },
+//   { name: "salam", marks: 30 },
+// ];
+
+// const addNewProp = students.map((item) => {
+//   if (item.marks < 50) {
+//     return { ...item, status: "fail" };
+//   } else {
+//     return { ...item, status: "pass" };
+//   }
+// });
+// console.log(addNewProp);
+
+const person = {
+  name: "john",
+  age: 66,
+  address: {
+    street: "kolkata, 1234 lane",
+    city: "kolkata",
+    location: {
+      vill: "basirhat",
+      pin: 232323,
+    },
+  },
+  hobbies: ["drawing", "playing"],
+};
+
+// const deepClone = {
+//   ...person,
+//   address: {
+//     ...person.address,
+//     location: {
+//       ...person.address.location,
+//     },
+//   },
+//   hobbies: [...person.hobbies],
+// };
+
+// deepClone.address.street = "taki road";
+// console.log(deepClone);
+// console.log(person)
+
+const deepClone = structuredClone(person);
+console.log(deepClone);
