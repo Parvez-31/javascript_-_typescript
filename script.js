@@ -1716,19 +1716,19 @@
 // });
 // console.log(addNewProp);
 
-const person = {
-  name: "john",
-  age: 66,
-  address: {
-    street: "kolkata, 1234 lane",
-    city: "kolkata",
-    location: {
-      vill: "basirhat",
-      pin: 232323,
-    },
-  },
-  hobbies: ["drawing", "playing"],
-};
+// const person = {
+//   name: "john",
+//   age: 66,
+//   address: {
+//     street: "kolkata, 1234 lane",
+//     city: "kolkata",
+//     location: {
+//       vill: "basirhat",
+//       pin: 232323,
+//     },
+//   },
+//   hobbies: ["drawing", "playing"],
+// };
 
 // const deepClone = {
 //   ...person,
@@ -1745,5 +1745,59 @@ const person = {
 // console.log(deepClone);
 // console.log(person)
 
-const deepClone = structuredClone(person);
-console.log(deepClone);
+// const deepClone = structuredClone(person);
+// console.log(deepClone);
+
+// const oddAverage = (...numbers) => {
+//   //   console.log(numbers);
+//   let odd = [];
+//   for (let i = 0; i < numbers.length; i++) {
+//     // console.log(numbers[i]);
+//     if (numbers[i] % 2 === 1) {
+//       odd.push(numbers[i]);
+//     }
+//   }
+
+//   if (odd.length === 0) {
+//     return "No odd numbers";
+//   }
+
+//   let sum = 0;
+//   for (let i = 0; i < odd.length; i++) {
+//     sum = sum + odd[i];
+//   }
+
+//   let count = odd.length;
+//   let average = sum / count;
+//   return average;
+// };
+// console.log(oddAverage(23, 12, 45, 67, 89, 22));
+
+// const oddAverage = (...numbers) => {
+//   //   console.log(numbers);
+//   const oddNumbers = numbers.filter((item) => item % 2 !== 0);
+//   if (oddNumbers.length === 0) return "No odd numbers";
+//   const oddNumbersSum = oddNumbers.reduce((acc, item) => acc + item, 0);
+//   return Math.floor(oddNumbersSum / oddNumbers.length);
+// };
+
+// console.log(oddAverage(23, 4, 56, 7, 89, 12, 34, 56));
+
+const evenAverage = (...numbers) => {
+  let even = [];
+  for (let number of numbers) {
+    if (number % 2 === 0) {
+      even.push(number);
+    }
+  }
+
+  if (even.length === 0) return "No even numbers";
+
+  let sum = 0;
+  for (let sumEven of even) {
+    sum = sum + sumEven;
+  }
+
+  return sum / even.length;
+};
+console.log(evenAverage(12, 34, 56, 79, 1, 5));
