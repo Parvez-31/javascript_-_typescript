@@ -2072,3 +2072,140 @@
 //   }
 // }
 // hello(data);
+
+// const borgo = (num = 2) => {
+//   return num * 2;
+// };
+// console.log(borgo());
+
+// let books = ["bengali", "english", "math"];
+// const favBooks = (allBooks = ["books"]) => {
+//   return allBooks;
+// };
+// console.log(favBooks());
+
+// let obj = {
+//   prise: 10,
+//   quantity: "full",
+// };
+// const person = (
+//   x = {
+//     prise: 20,
+//     quantity: "full",
+//   },
+// ) => {
+//   return x.prise;
+// };
+// console.log(person(obj));
+
+// const double = (arr = [5, 10, 15]) => {
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     newArr.push(arr[i] * 2);
+//   }
+//   return newArr;
+// };
+// console.log(double());
+
+// const interest = (
+//   x = {
+//     principal: 1000,
+//     rate: 5,
+//   },
+// ) => {
+//   return (x.principal * x.rate) / 100;
+// };
+
+// console.log(interest());
+
+// const first = "parvez";
+// const last = "hossien";
+// const name = first + " " + last + " " + "tarafder";
+// console.log(name);
+
+// const a = 10;
+// const b = 20;
+// const sum = `The sum of ${a} and ${b} is ${a + b}`;
+// console.log(sum);
+
+// const name = "raj";
+// const age = 34;
+// console.log("Name: " + name + ", Age: " + age);
+// console.log(`Name: ${name}, Age: ${age}`);
+
+// const getName = () => {
+//   return "sadia";
+// };
+// const msg = `Na bolle nadia, ase amr ${getName()}`;
+// console.log(msg);
+
+// const age = 20;
+// const status = `You are ${age >= 18 ? "adult" : "minor"}`;
+// console.log(status);
+
+// const user = {
+//   name: "parvez",
+//   age: 38,
+// };
+
+// console.log(`Name: ${user.name} , Age: ${user.age}`);
+
+// const fruit = ["apple", "bananna", "mango"];
+// const third = `My third favorite fruit is ${fruit[2]}`;
+// // console.log(list);
+// const list = fruit.join(", ");
+// console.log(list);
+
+// const title = "Welcome";
+// const body = "This is dynacmic HTML";
+// const html = `<div>
+// <h1>${title}</h1>
+// <p>${body}</p>
+// </div>`;
+// console.log(html);
+
+// const greet = (name) => {
+//   return `Hello, ${name}.`;
+// };
+// console.log(greet("Nadia"));
+
+// const firstNum = 100;
+// const secondNum = 80;
+// const result = `The difference between ${firstNum} and ${secondNum} is ${firstNum - secondNum}`;
+// console.log(result);
+
+// const employee = {
+//   name: "joy",
+//   age: 56,
+//   salary: 30000,
+// };
+
+// console.log(
+//   `Name: ${employee.name}, Age: ${employee.age}, Salary: ${employee.salary}`,
+// );
+
+// const fruits = ["mango", "apple", "banana"];
+// const third = `My third favorite fruit is ${fruits[2]}`;
+// console.log(third);
+
+// const person = {
+//   firstName: "Parvez",
+//   lastName: "Tarafder",
+// };
+
+// const getFullName = (person) => {
+//   return `FullName : ${person.firstName} ${person.lastName}`;
+// };
+// console.log(getFullName(person));
+
+// const animals = ["cat", "dog", "elephant"];
+// console.log(`My favorite animals are: ${animals.join(", ")}`);
+
+const student = {
+  name: "Parvez",
+  age: 26,
+  results: [45, 67, 89],
+};
+
+const result = `My name ${student.name} and my avg number is ${(student.results[0] + student.results[1] + student.results[2]) / student.results.length}`;
+console.log(result);
