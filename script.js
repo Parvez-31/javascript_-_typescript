@@ -2201,11 +2201,11 @@
 // const animals = ["cat", "dog", "elephant"];
 // console.log(`My favorite animals are: ${animals.join(", ")}`);
 
-const student = {
-  name: "Parvez",
-  age: 26,
-  results: [45, 67, 89],
-};
+// const student = {
+//   name: "Parvez",
+//   age: 26,
+//   results: [45, 67, 89],
+// };
 
-const result = `My name ${student.name} and my avg number is ${(student.results[0] + student.results[1] + student.results[2]) / student.results.length}`;
-console.log(result);
+// const result = `My name ${student.name} and my avg number is ${student.results[0] + student.results[1] + student.results[2] / student.results.length}`;
+// console.log(result);
