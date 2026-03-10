@@ -2367,10 +2367,82 @@
 // const { name, city, phone = "N/A" } = person;
 // console.log(name, city, phone);
 
-const teacher = {
-  name: "Maria",
-  profession: "Teacher",
-};
+// const teacher = {
+//   name: "Maria",
+//   profession: "Teacher",
+// };
 
-const { name, profession: job } = teacher;
-console.log(name, job);
+// const { name, profession: job } = teacher;
+// console.log(name, job);
+
+// const [first, second, ...rest] = [10, 20, 30, 40, 50];
+// console.log(first);
+// console.log(second);
+// console.log(rest);
+
+// const person = {
+//   name: "parvez",
+//   city: "kolkata",
+//   age: 89,
+//   vill: "basirhat",
+// };
+
+// const { name, age, ...details } = person;
+// console.log(name);
+// console.log(age);
+// console.log(details);
+
+// function multiply(multiplyer, ...numbers) {
+//   console.log(multiplyer, numbers);
+// }
+// multiply(1, 2, 3, 4, 5);
+// multiply(5, 6, 7, 8);
+
+// const product = {
+//   name: "Laptop",
+//   price: 50000,
+//   brand: "Dell",
+// };
+
+// const { name, ...details } = product;
+// console.log(name);
+// console.log(details);
+
+// const programmer = {
+//   name: "Parvez",
+//   language: "Javascript",
+//   experience: 5,
+//   specialty: "Frontend dev",
+//   tools: "React",
+// };
+
+// const { language, specialty, ...details } = programmer;
+// console.log(language);
+// console.log(specialty);
+// console.log(details);
+
+// const arr = [10, 20, 30, 40, 50, 600];
+// const [a, b, ...restArr] = arr;
+// console.log(a);
+// console.log(b);
+// console.log(restArr);
+
+// function totalNum(a, b, ...rest) {
+//   let sum = 0;
+//   for (let i = 0; i < rest.length; i++) {
+//     sum = sum + rest[i];
+//   }
+//   return sum;
+// }
+// console.log(totalNum(1, 2, 3, 4, 5, 6, 7, 8));
+
+// function avg(...rest) {
+//   if (rest.length === 0) return 0;
+//   let sum = 0;
+//   for (let i = 0; i < rest.length; i++) {
+//     sum = sum + rest[i];
+//   }
+//   return sum / rest.length;
+// }
+
+// console.log(avg(1, 2, 3, 4, 5, 6, 7, 8, 9));
