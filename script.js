@@ -2446,3 +2446,16 @@
 // }
 
 // console.log(avg(1, 2, 3, 4, 5, 6, 7, 8, 9));
+
+// const max = Math.max(2, 34, 7, 8, 9, 5);
+// console.log(max);
+
+// const number = [1, 2, 3, 4, 545, 67, 78, 23];
+// const maxNumber = Math.max(...number);
+// console.log(maxNumber);
+
+// const friends = [3, 4, 5, 6, 7];
+// const bondu = friends;
+// bondu.push(34);
+// console.log(bondu);
+// console.log(friends);
