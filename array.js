@@ -211,3 +211,7 @@
 // const firstLetter = friends.map((friend) => friend[0]);
 // console.log(nameLength);
 // console.log(firstLetter);
+
+//forEach
+// const numbers = [1, 3, 5, 6, 7];
+// const result = numbers.forEach((item) => console.log(item));
