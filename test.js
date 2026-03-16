@@ -82,3 +82,17 @@
 // }
 
 // console.log(newArr);
+
+const hello = async () => {
+  try {
+    let res = await fetch(`https://dummyjson.com/products`);
+    let response = await res.json();
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+hello()
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));

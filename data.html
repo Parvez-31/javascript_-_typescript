@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>User List</h1>
+    <button id="btn">Load User</button>
+    <ul id="user-list"></ul>
+
+    <script>
+      const btnEl = document.getElementById("btn");
+      const userListEl = document.getElementById("user-list");
+
+      const fetchUser = async () => {
+        try {
+          const res = await fetch(`https://dummyjson.com/products`);
+          if (!res.ok) throw new Error("Network Error");
+          const data = await res.json();
+          console.log(data);
+          data.products.forEach((product) => {
+            product.images.forEach((img) => {
+              const imgEl = document.createElement("img");
+              imgEl.src = img;
+              imgEl.width = 150;
+              userListEl.appendChild(imgEl);
+            });
+
+            // console.log(product);
+          });
+        } catch (error) {
+          console.log("Error", error);
+          userListEl.innerHTML = `<li style="color:red">Failed to load users</li>`;
+        }
+      };
+      btnEl.addEventListener("click", fetchUser);
+    </script>
+  </body>
+</html>
