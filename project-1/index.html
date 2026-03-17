@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - 1</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent-box {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 1px solid;
+        transition: all 0.5s ease;
+      }
+      button {
+        padding: 8px 16px;
+        border-radius: 8px;
+        border-style: none;
+        background-color: yellowgreen;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* js css */
+      .move-right {
+        transform: translateX(30rem);
+      }
+
+      .move-left {
+        transform: translateX(-30rem);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-box">
+      <div class="box"></div>
+      <button id="btn">Click Me</button>
+    </div>
+
+    <script>
+      const boxEl = document.querySelector(".box");
+      const btnEl = document.getElementById("btn");
+
+      btnEl.addEventListener("click", () => {
+        boxEl.style.backgroundColor = "yellow";
+        boxEl.style.borderRadius = "50%";
+      });
+
+      btnEl.addEventListener("dblclick", () => {
+        boxEl.classList.remove("move-left");
+        boxEl.classList.add("move-right");
+      });
+
+      btnEl.addEventListener("mouseover", () => {
+        boxEl.classList.remove("move-right");
+        boxEl.classList.add("move-left");
+      });
+    </script>
+  </body>
+</html>

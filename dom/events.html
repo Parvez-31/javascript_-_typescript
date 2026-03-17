@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h1>Inline Event</h1>
+    <button onclick="hello()">greeting</button>
+    <button>greeting again</button>
+
+    <h1>Dom Event Handler</h1>
+    <button id="dom-event">greeting</button>
+    <ul id="ul"></ul>
+    <button>greeting again</button>
+
+    <h1>addEventListener Event Handler</h1>
+    <button id="btn">greeting</button>
+    <button>greeting again</button>
+
+    <script>
+      //   function hello() {
+      //     console.log("clicked");
+      //   }
+      //   const domEventEl = document.getElementById("dom-event");
+      //   const ulEl = document.getElementById("ul");
+      //   domEventEl.onclick = function () {
+      //     // console.log("hello");
+      //     const pEl = document.createElement("p");
+      //     pEl.textContent = "clicked";
+      //     ulEl.appendChild(pEl);
+      //   };
+      //   document.getElementById("btn").addEventListener("click", () => {
+      //     alert("welcome to js course");
+      //   });
+      //   document.getElementById("btn").addEventListener("mouseover", () => {
+      //     alert("welcome to python course");
+      //   });
+    </script>
+  </body>
+</html>
