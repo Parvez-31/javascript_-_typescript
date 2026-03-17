@@ -401,3 +401,12 @@
 // }, 50);
 
 // console.log(result);
+
+//sort
+// const arr = ["zara", "bob", "anna", "chris"];
+// const result = arr.sort();
+// console.log(result);
+
+// const num = [100, 800, 50, 80, 8, 7];
+// const result = num.sort((a, b) => a - b);
+// console.log(result);
