@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+  </head>
+  <body>
+    <!-- product list -->
+    <div id="list-page">
+      <h1>Products List</h1>
+      <ul id="product-list"></ul>
+    </div>
+
+    <!-- product details -->
+    <div id="details-page">
+      <h1>Product Details</h1>
+      <div id="product-details"></div>
+      <button id="btn">back</button>
+    </div>
+
+    <!-- js start -->
+    <script>
+      const listPage = document.getElementById("list-page");
+      const detailsPage = document.getElementById("details-page");
+      const productList = document.getElementById("product-list");
+      const productDetails = document.getElementById("product-details");
+      const btnEl = document.getElementById("btn");
+
+      // fetch all products
+      const fetchProducts = async () => {
+        try {
+          const res = await fetch("https://dummyjson.com/products");
+          const data = await res.json();
+          console.log(data);
+          data.products.forEach((product) => {
+            let liEl = document.createElement("li");
+            //   const imgEl = document.createElement("img")
+            liEl.innerHTML = `
+        <div style="margin-bottom:20px;">
+          <img src="${product.thumbnail}" width="100" />
+          <p>${product.title}</p>
+          <button onclick="showDetails(${product.id})">Details</button>
+        </div>
+      `;
+            productList.appendChild(liEl);
+          });
+        } catch (error) {
+          console.log("Error", error);
+          userListEl.innerHTML = `<li style="color:red">Failed to load users</li>`;
+        }
+      };
+
+      // show product details
+      const showDetails = async (id) => {
+        try {
+          const res = await fetch(`https://dummyjson.com/products/${id}`);
+
+          if (!res.ok) {
+            throw new Error("Failed to fetch product");
+          }
+          const product = await res.json();
+
+          productDetails.innerHTML = `
+          <h2>${product.title}</h2>
+          <img src="${product.thumbnail}" width="200" />
+          <p><b>Price:</b> $${product.price}</p>
+          <p>${product.description}</p>
+        `;
+          //==========
+          listPage.style.display = "none";
+          detailsPage.style.display = "block";
+
+          // back button
+          btnEl.addEventListener("click", () => {
+            detailsPage.style.display = "none";
+            listPage.style.display = "block";
+          });
+        } catch (error) {
+          console.log(error);
+          productDetails.innerHTML = `<p>Something went wrong 😢</p>`;
+        }
+      };
+
+      fetchProducts();
+    </script>
+  </body>
+</html>
