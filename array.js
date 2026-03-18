@@ -438,3 +438,13 @@
 // ];
 // friends.reverse();
 // console.log(friends);
+
+// slice
+// const names = ["alise", "bob", "david", "nill", "parvez"];
+// const result = names.slice(2, names[names - 1]);
+// console.log(result);
+// console.log(names);
+
+// const fruits = ["apple", "mango", "guava"];
+// const fruitsCopy = fruits.slice();
+// console.log(fruitsCopy);
