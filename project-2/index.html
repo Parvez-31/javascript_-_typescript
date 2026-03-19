@@ -61,5 +61,23 @@
         <p class="event-type">Event code:</p>
       </div>
     </div>
+    <!-- js start    -->
+    <script>
+      const myInputEl = document.getElementById("my-input");
+
+      const handleKeyPress = (event) => {
+        console.log(event);
+        document.querySelector(".key-pressed").innerHTML =
+          `Key pressed: ${event.key}`;
+        document.querySelector(".key-code").innerHTML =
+          `Key code: ${event.code}`;
+        document.querySelector(".char-code").innerHTML =
+          `Char code: ${event.key.charCodeAt(0)}`;
+        document.querySelector(".event-type").innerHTML =
+          `Event type: ${event.type}`;
+      };
+
+      myInputEl.addEventListener("keydown", handleKeyPress);
+    </script>
   </body>
 </html>
