@@ -113,3 +113,25 @@
 // let hello = "hello world";
 // let sp = hello.split("*");
 // console.log(sp);
+
+// const city = "kolk ata";
+// console.log(city.length);
+// console.log(city[0]);
+// console.log(city.includes("o"));
+// console.log(city.indexOf("at"));
+// console.log(city.indexOf("xz"));
+
+// const num = [11, 56, 23, 88, 22];
+// num[1] = 99;
+// console.log(num);
+
+// const city = "mumbai";
+// console.log(city.indexOf("b"));
+// const division = "basirhat";
+// console.log(division.includes("h"));
+// const name = "parvez";
+// console.log(name[name.length - 1]);
+// const programming = "javascript";
+// console.log(programming.indexOf("rip"));
+// const x = "python";
+// console.log(x.length);
