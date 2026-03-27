@@ -170,3 +170,13 @@
 // const address = "basirhatdandirhat";
 // const result = address.slice(5);
 // console.log(result);
+
+// const sentence = "i am a good boy and hardworking person";
+// console.log(sentence.split(" "));
+// const result = sentence.split(" ");
+// console.log(result);
+// console.log(sentence);
+
+// const friend = "rahim,parvez,mota,afroja";
+// const result = friend.split(",");
+// console.log(result);
