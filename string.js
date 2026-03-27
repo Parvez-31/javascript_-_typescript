@@ -197,3 +197,38 @@
 // const result = str1.concat(" ", str2);
 // console.log(result);
 // console.log("I".concat(" love", " javascript"));
+
+// const friend = "rahim,parvez,mota,afroja";
+// const result = friend.split(",");
+// console.log(result);
+
+// const realFriend = ["parvez", "rahim", "sajit", "fahi"];
+// const result = realFriend.join(",");
+// console.log(result);
+
+// const str = "function if else while";
+// const result = str.split(" ");
+// console.log(result);
+
+// const language = ["javascript", "python", "java"];
+// const result = language.join(";");
+// console.log(result);
+
+// const str = " console log debug ";
+// const result = str.trim();
+// console.log(result);
+// console.log(str);
+
+// const str1 = "push";
+// const str2 = "pop";
+// const str3 = "unshift";
+// const str4 = "map";
+// const result = str1.concat(",", str2, ",", str3, ",", str4);
+// console.log(result);
+
+// const str = "hello javascript developer";
+// const result = str.slice(6, 16);
+// console.log(result);
+
+// const str = "code more learn more";
+// console.log(str.substring(10, 15));
