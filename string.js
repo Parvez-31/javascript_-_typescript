@@ -185,3 +185,15 @@
 // const result = realFriend.join("*");
 // console.log(result);
 // console.log(realFriend);
+
+// const first = "parvez";
+// const middle = "hossien";
+// const last = "Tarafder";
+// const name = first + middle + last;
+// console.log(name);
+
+// const str1 = "hello";
+// const str2 = "world";
+// const result = str1.concat(" ", str2);
+// console.log(result);
+// console.log("I".concat(" love", " javascript"));
