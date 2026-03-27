@@ -180,3 +180,8 @@
 // const friend = "rahim,parvez,mota,afroja";
 // const result = friend.split(",");
 // console.log(result);
+
+// const realFriend = ["parvez", "rahim", "sajit", "fahi"];
+// const result = realFriend.join("*");
+// console.log(result);
+// console.log(realFriend);
