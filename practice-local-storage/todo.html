@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO - APP</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      section {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .add-todo {
+        display: flex;
+        gap: 20px;
+      }
+
+      input {
+        padding: 10px 20px;
+        border-radius: 10px;
+        border-style: none;
+        border: 1px solid;
+      }
+
+      #add-product {
+        border-radius: 10px;
+        border-style: none;
+        padding: 10px 20px;
+        background-color: lightgreen;
+        cursor: pointer;
+      }
+
+      .delete-btn {
+        background-color: red;
+        border-radius: 10px;
+        border-style: none;
+        padding: 10px 20px;
+        color: white;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      .list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Todo List</h1>
+
+      <div class="add-todo">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Enter your product name"
+        />
+        <button id="add-product">Add Todo</button>
+      </div>
+
+      <div class="list">
+        <ul id="product-list"></ul>
+      </div>
+    </section>
+
+    <script>
+      const addProductEl = document.getElementById("add-product");
+      const productListEl = document.getElementById("product-list");
+
+      addProductEl.addEventListener("click", () => {
+        const productName = document.getElementById("todo-input").value;
+        if (!productName) {
+          alert("Enter your product name");
+          return;
+        }
+
+        let product = JSON.parse(localStorage.getItem("product"));
+        if (!Array.isArray(product)) {
+          product = [];
+        }
+
+        const newProduct = {
+          productName: productName,
+        };
+
+        product.push(newProduct);
+        localStorage.setItem("product", JSON.stringify(product));
+
+        // create li + delete button
+        const liEl = document.createElement("li");
+        const deleteEl = document.createElement("button");
+
+        liEl.textContent = productName;
+        deleteEl.textContent = "Delete";
+        deleteEl.classList.add("delete-btn");
+
+        // delete button only UI + Local-Storage
+        deleteEl.addEventListener("click", () => {
+          liEl.remove();
+
+          let product = JSON.parse(localStorage.getItem("product")) || [];
+          product = product.filter((p) => p.productName !== productName);
+
+          localStorage.setItem("product", JSON.stringify(product));
+        });
+
+        liEl.appendChild(deleteEl);
+        productListEl.appendChild(liEl);
+        document.getElementById("todo-input").value = "";
+      });
+    </script>
+  </body>
+</html>
