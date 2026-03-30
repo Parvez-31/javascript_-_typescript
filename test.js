@@ -83,16 +83,28 @@
 
 // console.log(newArr);
 
-const hello = async () => {
-  try {
-    let res = await fetch(`https://dummyjson.com/products`);
-    let response = await res.json();
-    return response;
-  } catch (error) {
-    console.log(error);
-  }
+// const hello = async () => {
+//   try {
+//     let res = await fetch(`https://dummyjson.com/products`);
+//     let response = await res.json();
+//     return response;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// hello()
+//   .then((data) => console.log(data))
+//   .catch((err) => console.log(err));
+
+const hello1 = () => {
+  var x = 2;
+  console.log(x, y);
+};
+const hello2 = () => {
+  var y = 4;
+  console.log(x, y);
 };
 
-hello()
-  .then((data) => console.log(data))
-  .catch((err) => console.log(err));
+hello1();
+hello2();
