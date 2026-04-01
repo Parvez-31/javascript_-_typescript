@@ -2643,3 +2643,35 @@
 
 // playSound(new Dog());
 // playSound(new Cat());
+
+// class Payment {
+//   pay(amount) {
+//     console.log(`Processing payment ${amount}`);
+//   }
+// }
+
+// class CreditCardPayment extends Payment {
+//   pay(amount) {
+//     console.log(`Paid ${amount} using Credit Card`);
+//   }
+// }
+
+// class UPIPayment extends Payment {
+//   pay(amount) {
+//     console.log(`Paid ${amount} using UPI`);
+//   }
+// }
+
+// class WalletPayment extends Payment {
+//   pay(amount) {
+//     console.log(`Paid ${amount} using Wallet`);
+//   }
+// }
+
+// const payments = [
+//   new CreditCardPayment(),
+//   new UPIPayment(),
+//   new WalletPayment(),
+// ];
+
+// payments.forEach((p) => p.pay(500));
