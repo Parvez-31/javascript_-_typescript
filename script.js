@@ -2614,3 +2614,32 @@
 // deepCopy.name = "nill";
 // console.log(deepCopy);
 // console.log(person);
+
+// function hello(a, b) {
+//   return a + b;
+// }
+
+// console.log(hello(3, 5));
+// console.log(hello("Parvez", "Tarafder"));
+
+// class Animal {
+//   speak() {}
+// }
+
+// class Dog extends Animal {
+//   speak() {
+//     console.log("woof woof");
+//   }
+// }
+// class Cat extends Animal {
+//   speak() {
+//     console.log("mau mau");
+//   }
+// }
+
+// function playSound(animal) {
+//   animal.speak();
+// }
+
+// playSound(new Dog());
+// playSound(new Cat());
