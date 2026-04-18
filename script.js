@@ -2846,3 +2846,51 @@
 // const arr = [2, 3, 4, 5, 6, 7];
 // delete arr[2];
 // console.log(arr[2]);
+
+// const x = " ";
+// if (x) {
+//   console.log("value of x is truthy");
+// } else {
+//   console.log("value of x is falsy");
+// }
+
+// const y = "";
+// if (!y) {
+//   console.log("value of y is falsy");
+// } else {
+//   console.log("value of y is true");
+// }
+
+// console.log(!!"hello");
+// console.log(!!23);
+// console.log(!!{});
+// console.log(!![]);
+
+// console.log(!!"");
+// console.log(!!0);
+// console.log(!!null);
+// console.log(!!undefined);
+// console.log(!!NaN);
+
+// const value = 0;
+// console.log(!!value);
+
+// if ("false") {
+//   console.log("false");
+// } else {
+//   console.log("true");
+// }
+
+// if ({}) {
+//   console.log("true");
+// } else {
+//   console.log(false);
+// }
+
+// if ([]) {
+//   console.log("true");
+// } else {
+//   console.log(false);
+// }
+
+console.log(!![]);
