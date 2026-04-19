@@ -2893,4 +2893,62 @@
 //   console.log(false);
 // }
 
-console.log(!![]);
+// console.log(!![]);
+
+// console.log(2 === "2"); // false
+// console.log(1 === true); // false
+// console.log(null === undefined); // false
+// console.log("" === 0); // false
+// console.log(false === "0"); // false
+// console.log([] === false); // false
+
+// console.log(2 == "2"); // true
+// console.log(1 == true); // true
+// console.log(null == undefined); // true
+// console.log("" == 0); // true
+// console.log(false == "0"); // true
+// console.log([] == false); // true
+
+// console.log(false == "0"); // true
+// console.log(true == "1"); // true
+// console.log(true == "10"); // false
+// console.log([1, 2] == 12); // false
+// console.log([1] == 1); // false
+// console.log(NaN == NaN); // false
+// console.log(NaN === NaN); // false
+// console.log({} === {}); // false
+
+// const first = {};
+// const second = first;
+// console.log(first === second);
+
+// if (true == 1) {
+//   console.log("same");
+// } else {
+//   console.log("different");
+// }
+
+// const first = {
+//   name: "parvez",
+//   home: "basirhat",
+// };
+// const second = {
+//   name: "mota",
+//   home: "barasat",
+// };
+
+// console.log(first == second);
+// console.log(first === second);
+
+// const arr = [];
+// const arr1 = arr;
+// console.log(arr === arr1);
+
+// function check(num, bool) {
+//   return num == bool;
+// }
+// console.log(check(2, true));
+
+// console.log("" == false);
+
+// console.log(null === undefined);
