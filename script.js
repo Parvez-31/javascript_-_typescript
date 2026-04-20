@@ -2952,3 +2952,54 @@
 // console.log("" == false);
 
 // console.log(null === undefined);
+
+// function greatting(greattingHandler) {
+//   //   console.log(greattingHandler);
+//   greattingHandler();
+// }
+// function morningGreatting() {
+//   console.log("good morning");
+// }
+
+// greatting(morningGreatting);
+
+// function calculate(a, b, print) {
+//   const result = a + b;
+//   print(result);
+// }
+// function printResult(value) {
+//   console.log("result is ", value);
+// }
+
+// calculate(2, 5, printResult);
+
+// const obj = {
+//   name: "parvez",
+//   home: "basirhat",
+// };
+
+// for (let [key, value] of Object.entries(obj)) {
+//   console.log(key);
+// }
+
+// function mainFn(obj, result) {
+//   for (let [key, value] of Object.entries(obj)) {
+//     result(key);
+//   }
+// }
+
+// function objFn(x) {
+//   console.log(x);
+// }
+
+// mainFn(obj, objFn);
+
+// function numberProcessor(num, callback) {
+//   const result = num / 5;
+//   callback(result);
+// }
+// function callback(value) {
+//   console.log(value);
+// }
+
+// numberProcessor(10, callback);
