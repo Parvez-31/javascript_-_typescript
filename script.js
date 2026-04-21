@@ -3089,3 +3089,12 @@
 // const str = "3498";
 // const num = +str;
 // console.log(typeof num);
+
+// string constractor
+// const num = 3048;
+// const str = String(num);
+// console.log(typeof str);
+
+// const num = 3048;
+// const str = num + "";
+// console.log(typeof str);
