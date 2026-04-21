@@ -3106,3 +3106,9 @@
 // Function constractor
 // const add = new Function("a", "b", "return a + b");
 // console.log(add(5, 10));
+
+// Object constractor
+// const person = new Object();
+// person.name = "parvez";
+// person.home = "basirhat";
+// console.log(person);
