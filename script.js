@@ -3003,3 +3003,80 @@
 // }
 
 // numberProcessor(10, callback);
+
+// const smart = true;
+
+// if (smart) {
+//   let message = "prochur gorom";
+//   console.log("batas dau");
+// }
+
+// console.log(message);
+
+// function add(a, b) {
+//   const plus = a + b;
+//   console.log(a, b);
+//   return plus;
+// }
+
+// console.log(a, b);
+// console.log(add(5, 6));
+
+// function bari() {
+//   const name = "parvez";
+
+//   function ghor() {
+//     console.log(name);
+//   }
+//   ghor();
+// }
+
+// bari();
+
+// const name = "parvez";
+
+// function outer() {
+//   const bari = "basirhat";
+
+//   function inner() {
+//     const phno = 34038473024;
+
+//     console.log(phno);
+//     console.log(bari);
+//     console.log(name);
+//   }
+//   inner();
+// }
+
+// outer();
+
+// const taxRate = 15;
+
+// const calulateTax = (income) => {
+//   const totalTax = (income * taxRate) / 100;
+//   return totalTax;
+// };
+
+// console.log(calulateTax(50000));
+
+// const x = () => {
+//   let insideSceret = "Internal secret hiding place";
+// };
+
+// console.log(insideSceret);
+
+// if (true) {
+//   let temperature = "20c";
+// }
+
+// console.log(temperature);
+
+// function schoolDetails() {
+//   let schoolName = "Dandirhat high school";
+//   function displaySchoolName() {
+//     console.log(schoolName);
+//   }
+//   displaySchoolName();
+// }
+
+// schoolDetails();
