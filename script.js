@@ -3102,3 +3102,7 @@
 // boolean constractor
 // const isFalsy = Boolean(1);
 // console.log(isFalsy);
+
+// Function constractor
+// const add = new Function("a", "b", "return a + b");
+// console.log(add(5, 10));
