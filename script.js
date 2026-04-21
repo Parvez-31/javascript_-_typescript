@@ -3085,3 +3085,7 @@
 // const num = "45";
 // const number = Number(num);
 // console.log(typeof number);
+
+// const str = "3498";
+// const num = +str;
+// console.log(typeof num);
