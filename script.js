@@ -3098,3 +3098,7 @@
 // const num = 3048;
 // const str = num + "";
 // console.log(typeof str);
+
+// boolean constractor
+// const isFalsy = Boolean(1);
+// console.log(isFalsy);
