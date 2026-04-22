@@ -3112,3 +3112,51 @@
 // person.name = "parvez";
 // person.home = "basirhat";
 // console.log(person);
+
+// Math(min);
+// const arr = Math.min(34, 6, 53, 6, 4, 6, 67, 7, 754, 34, 34, -88);
+// console.log(arr);
+
+// Math(max);
+// const arr = Math.max(34, 6, 53, 6, 4, 6, 67, 7, 754, 34, 34, -88);
+// console.log(arr);
+
+// Math(PI);
+// console.log("Value of PI is ", Math.PI);
+
+// Math(abs);
+// console.log(Math.abs(-8));
+// console.log(Math.abs(8));
+
+// Math(round);
+// console.log(Math.round(4.5));
+// console.log(Math.round(4.4));
+
+// Math(floor);
+// console.log(Math.floor(4.5));
+// console.log(Math.floor(4.9));
+
+// Math(ceil);
+// console.log(Math.ceil(4.5));
+// console.log(Math.ceil(4.1));
+
+// Math(random);
+// console.log(Math.random());
+// console.log(Math.random());
+
+// practice
+// console.log(Math.min(45, 11, 49, 34, 56, -12, -56));
+// console.log(Math.max(45, 11, 49, 34, 56, -12, -56));
+// console.log(Math.round(7.6));
+// console.log(Math.round(7.2));
+// console.log(Math.ceil(9.3));
+// console.log(Math.ceil(5.3));
+// console.log(Math.floor(5.3));
+// console.log(Math.abs(-89));
+// function checkNum(num) {
+//   console.log(Math.round(num));
+//   console.log(Math.floor(num));
+//   console.log(Math.ceil(num));
+// }
+
+// checkNum(8.9);
