@@ -3160,3 +3160,35 @@
 // }
 
 // checkNum(8.9);
+
+// TOPIC: Date with JS Date
+// const now = new Date();
+// console.log(now);
+
+// const date1 = new Date("2025-12-12");
+// const date2 = new Date("2026-8-12");
+
+// const diffInMiliSeconds = date2 - date1;
+// // console.log(diffInMiliSeconds);
+
+// const diffInDays = diffInMiliSeconds / (1000 * 60 * 60 * 24);
+// console.log(diffInDays);
+
+// practice
+// console.log(new Date());
+// console.log(new Date(2035 - 6 - 15 - 14 - 45 - 30));
+// const today = new Date();
+// const year = today.getFullYear();
+// console.log(year);
+// const birthday = new Date("1999-3-31");
+// const birthYear = birthday.getFullYear();
+// console.log(birthYear);
+// const birthYear = 1999;
+// const currentAge = new Date().getFullYear() - birthYear;
+// console.log(currentAge);
+// const d = new Date();
+// d.setFullYear(1999);
+// console.log(d);
+// const date = new Date();
+// const day = date.toLocaleDateString("bn-BD", { weekday: "long" });
+// console.log(day);
