@@ -3192,3 +3192,30 @@
 // const date = new Date();
 // const day = date.toLocaleDateString("bn-BD", { weekday: "long" });
 // console.log(day);
+
+// const pattern = /apple/;
+// const pattern = new RegExp("apple");
+
+// const sentence = "I have an apple";
+// const pattern = /apple/;
+// console.log(pattern.test(sentence));
+
+// const sentence = "I have an apple and another Apple";
+// const newSentence = sentence.replace(/apple/gi, "bannana");
+// console.log(newSentence);
+
+// const email = "tarafderparvez406@gmail.com";
+// const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+// console.log(emailPattern.test(email));
+
+// const sentence = "I bought an orange";
+// const newSentence = sentence.replace(/orange/g, "grape");
+// console.log(newSentence);
+
+// const sentence = "I like to have apple and banana";
+// const pattern = /ana/;
+// console.log(pattern.test(sentence));
+
+// const sentence = "I am eating apple. apple is good. apple helps me a lot";
+// const newSentence = sentence.replace(/apple/g, "javascript");
+// console.log(newSentence);
