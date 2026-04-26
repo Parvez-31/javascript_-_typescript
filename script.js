@@ -3241,3 +3241,9 @@
 // mySet.delete(10);
 // console.log(mySet);
 // console.log(mySet.has(10));
+
+// Map
+// const myMap = new Map();
+// myMap.set("name", "rahim");
+// myMap.set("age", 25);
+// console.log(myMap);
