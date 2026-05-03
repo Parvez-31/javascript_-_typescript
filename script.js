@@ -3405,3 +3405,15 @@
 //     clearInterval(intervelId);
 //   }
 // }, 2000);
+
+// console.log("start");
+
+// setTimeout(() => {
+//   console.log("Timeout 1");
+// }, 5000);
+
+// setTimeout(() => {
+//   console.log("Timeout 2");
+// }, 500);
+
+// console.log("end");
